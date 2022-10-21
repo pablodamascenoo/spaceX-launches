@@ -1,0 +1,7 @@
+.link {
+  @apply hover:underline underline-offset-8;
+}
+
+.header {
+  @apply w-screen h-24 bg-glass-gradient shadow-lg flex flex-col items-center text-sm fixed;
+}

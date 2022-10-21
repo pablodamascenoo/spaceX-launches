@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  main {
+    @apply w-screen h-screen bg-purple-gradient;
+  }
+}
