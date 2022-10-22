@@ -3,5 +3,5 @@
 }
 
 .header {
-  @apply w-screen h-24 bg-glass-gradient shadow-lg flex flex-col items-center text-sm fixed;
+  @apply w-screen h-24 bg-glass-gradient shadow-lg flex flex-col items-center text-sm fixed z-10 backdrop-blur-xl;
 }

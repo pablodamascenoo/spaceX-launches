@@ -4,6 +4,16 @@
 
 @layer base {
   main {
-    @apply w-screen h-screen bg-purple-gradient;
+    @apply w-screen h-screen bg-purple-gradient flex flex-col items-center overflow-y-scroll;
+  }
+
+  p {
+    @apply text-[0.65rem];
+  }
+}
+
+@layer components {
+  .btn_glass {
+    @apply w-28 h-8 bg-glass-gradient shadow-lg rounded-full hover:scale-110 transition duration-300;
   }
 }

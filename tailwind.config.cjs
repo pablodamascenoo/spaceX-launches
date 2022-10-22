@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
@@ -13,7 +15,11 @@ module.exports = {
           "linear-gradient(101.45deg, rgba(255, 255, 255, 0.49) 0%, rgba(255, 255, 255, 0) 100%)",
       },
       boxShadow: {
-        "lg": "3px 4px 24px -1px rgba(0, 0, 0, 0.25)",
+        lg: "0px 4px 24px -1px rgba(0, 0, 0, 0.25)",
+      },
+      screens: {
+        xs: "321px",
+        ...defaultTheme.screens,
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],

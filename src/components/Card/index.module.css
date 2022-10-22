@@ -1,0 +1,11 @@
+.glass_card {
+  @apply bg-glass-gradient w-[80%] h-48 rounded-lg shadow-lg backdrop-blur-lg z-0 xs:w-[90%] md:w-[30rem];
+}
+
+.title {
+  @apply text-left text-lg whitespace-nowrap mb-6;
+}
+
+.text_box {
+  @apply overflow-x-hidden w-full flex flex-col items-center pl-4 py-4;
+}
