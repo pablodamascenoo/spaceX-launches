@@ -1,5 +1,5 @@
 .glass_card {
-  @apply bg-glass-gradient w-[80%] h-48 rounded-lg shadow-lg backdrop-blur-lg z-0 xs:w-[90%] md:w-[30rem];
+  @apply bg-glass-gradient w-[90%] h-48 rounded-lg shadow-lg backdrop-blur-lg z-0 md:w-[30rem];
 }
 
 .title {
