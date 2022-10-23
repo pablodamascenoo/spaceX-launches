@@ -16,4 +16,8 @@
   .btn_glass {
     @apply w-28 h-8 bg-glass-gradient shadow-lg rounded-full hover:scale-110 transition duration-300;
   }
+
+  .scroller {
+    @apply mt-32 mx-auto flex flex-col gap-4 mb-6 items-center w-screen max-w-lg;
+  }
 }
