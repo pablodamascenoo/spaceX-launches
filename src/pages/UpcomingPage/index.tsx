@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Card from "../../components/Card/index.js";
-import Header from "../../components/Header/index.js";
 import api from "../../services/api.js";
 import { Launch } from "../../types/Launch.js";
 
@@ -29,7 +28,6 @@ export default function UpcomingPage() {
 
   return (
     <main id="scrollableMain">
-      <Header />
       <InfiniteScroll
         scrollableTarget="scrollableMain"
         className="scroller"
@@ -40,7 +38,7 @@ export default function UpcomingPage() {
         endMessage={<p className="text-center text-lg">You have seen it all</p>}
       >
         {launches?.map((item, index) => {
-          const { crew, name, success, date_unix, links } = item;
+          const { crew, name, success, date_unix, links, id } = item;
           return (
             <Card
               key={index}
@@ -49,6 +47,7 @@ export default function UpcomingPage() {
               success={success}
               date={date_unix}
               image={links.patch.small}
+              id={id}
             />
           );
         })}
