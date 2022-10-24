@@ -10,8 +10,8 @@ export default function Header() {
         <Link to={"/"} className={Styles.link}>
           Home
         </Link>
-        <Link to={"/previous"} className={Styles.link}>
-          Previous
+        <Link to={"/latest"} className={Styles.link}>
+          Latest
         </Link>
         <Link to={"/next"} className={Styles.link}>
           Next
