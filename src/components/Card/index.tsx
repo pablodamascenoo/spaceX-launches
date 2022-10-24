@@ -2,6 +2,7 @@ import dayjs from "dayjs";
 import { Crew } from "../../types/Launch.js";
 import { Rocket } from "phosphor-react";
 import Styles from "./index.module.css";
+import { useNavigate } from "react-router-dom";
 
 type Props = {
   name: string;
@@ -9,9 +10,11 @@ type Props = {
   date: number;
   crew: Crew[];
   success: boolean;
+  id: string;
 };
 
-export default function Card({ name, image, date, crew, success }: Props) {
+export default function Card({ name, image, date, crew, success, id }: Props) {
+  const navigate = useNavigate();
   const parsedDate = dayjs.unix(date);
   const status = success
     ? "success"
@@ -36,7 +39,14 @@ export default function Card({ name, image, date, crew, success }: Props) {
           <div className="w-full mb-6">
             <p>Status: {status}</p>
           </div>
-          <button className="btn_glass text-[0.7rem]">Details</button>
+          <button
+            className="btn_glass text-[0.7rem]"
+            onClick={() => {
+              navigate(`/${id}`);
+            }}
+          >
+            Details
+          </button>
         </div>
       </div>
     </div>
