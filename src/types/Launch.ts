@@ -17,7 +17,7 @@ export type Launch = {
       small: string;
       large: string;
     };
-    webcast: string;
+    youtube_id: string;
   };
   success: boolean;
   failures: Failure[];
