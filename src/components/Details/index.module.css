@@ -7,11 +7,11 @@
 }
 
 .glass_div {
-  @apply absolute top-0 left-0 right-0 bottom-0 z-[1] bg-glass-gradient;
+  @apply absolute top-0 left-0 right-0 bottom-0 z-[1] bg-glass-gradient flex flex-col justify-end;
 }
 
 .glass_div > h2 {
-  @apply text-center pt-64 text-4xl;
+  @apply text-center text-4xl pb-4;
 }
 
 .info_box {
