@@ -51,3 +51,20 @@ Siga o [.env.example](.env.example) para criar seu próprio .env
 ```bash
 $ npm run dev
 ```
+
+## Hotjar e Google Optimize:
+
+A aplicação também possui integração com scripts do Hotjar para geração de heatmaps e padrões de costumes dos usuários:
+
+<div style="width:100%; display:flex; justify-content: center;" >
+  <img src="./.github/heatmap.jpg">
+</div>
+<br>
+
+Já o Google Optimize tem o papel de criar variações do site original e descobrir qual variação se sai melhor.
+
+<br>
+<div>
+  <img src="./.github/original_page.png">
+  <img src="./.github/variant_page.png">
+</div>
